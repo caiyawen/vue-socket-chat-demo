@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>socket</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<link href="./main.css" rel="stylesheet"></head>
+
+<body>
+    <ul class="pages">
+        <li class="chat page">
+            <div class="chat-title">聊天室</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="chat-info">
+                        <div>昵称: <span id="user"></span></div>
+                        <div>房间: <span id="room"></span></div>
+                        <div>当前在线人数: <span id="count"></span></div>
+                        <div>用户列表:
+                            <ul id="users"></ul>
+                        </div>
+                        <button id="leave" class="btn chat-btn">退出房间</button>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="chatArea">
+                        <ul class="messages" id="msglog">
+                        </ul>
+                    </div>
+                    <input class="inputMessage" id="messageInput" placeholder="Type here..." />
+                </div>
+            </div>
+        </li>
+        <li class="login page">
+            <div class="form">
+                <h3 class="title">给自己取个昵称吧～</h3>
+                <input class="usernameInput" id="userName" type="text" maxlength="14" />
+                <h3 class="title">输入房间号～</h3>
+                <input class="usernameInput" id="roomID" type="text" maxlength="14" />
+                <div class="enter-btn">
+                    <button id="submit" class="btn btn-lg chat-btn">进入聊天室</button>
+                </div>
+                <span id="help-block" hidden>请输入你的昵称和房间号</span>
+            </div>
+        </li>
+    </ul>
+<script type="text/javascript" src="main.bundle.js"></script></body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../src/js/chat.js"></script>
+</head>
+
+<body>
+    昵称: <span id="userName"></span> <br/> 房间: {{roomID}} <br/> 当前在线人数: <span id="count">{{users.length}}</span> <br/> 在线用户:
+    <div id="users">{{users}}</div>
+    <div id="msglog">
+    </div>
+    <textarea name="message" id="messageInput"></textarea>
+    <br/> 按Enter键发送
+    <button id="joinOrLeave">退出房间</button>
+</body>
+
+</html>
